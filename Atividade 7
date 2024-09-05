@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    // Declaração das variáveis
+    int numeroPassaros;
+    float quantidadeRacaoTotal;
+
+    // Quantidade de ração consumida por pássaro por dia (em gramas)
+    const float racaoPorPassaro = 30.0;
+
+    // Solicita ao usuário o número de pássaros
+    printf("Digite o número de pássaros: ");
+    scanf("%d", &numeroPassaros);
+
+    // Calcula a quantidade total de ração necessária
+    quantidadeRacaoTotal = numeroPassaros * racaoPorPassaro;
+
+    // Exibe o resultado na tela
+    printf("A quantidade total de ração necessária por dia é: %.2f gramas\n", quantidadeRacaoTotal);
+
+    return 0;
+}
