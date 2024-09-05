@@ -1,0 +1,27 @@
+#include <stdio.h>
+
+int main() {
+    // Declaração das variáveis
+    int numSmartphones, numTablets;
+    float totalArrecadado;
+
+    // Preço dos produtos
+    const float precoSmartphone = 1000.0;
+    const float precoTablet = 1500.0;
+
+    // Solicita ao usuário o número de smartphones vendidos
+    printf("Digite o número de smartphones vendidos: ");
+    scanf("%d", &numSmartphones);
+
+    // Solicita ao usuário o número de tablets vendidos
+    printf("Digite o número de tablets vendidos: ");
+    scanf("%d", &numTablets);
+
+    // Calcula o total arrecadado
+    totalArrecadado = (numSmartphones * precoSmartphone) + (numTablets * precoTablet);
+
+    // Exibe o resultado na tela
+    printf("O total arrecadado com as vendas é: R$ %.2f\n", totalArrecadado);
+
+    return 0;
+}
