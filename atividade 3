@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    float peso;            // Variável para armazenar o peso do prato
+    float valorPorQuilo = 40.0; // Valor por quilo
+    float valorTotal;      // Variável para armazenar o valor total
+
+    // Ler o peso do prato do cliente
+    printf("Digite o peso do prato (em quilos): ");
+    scanf("%f", &peso);
+
+    // Calcular o valor total
+    valorTotal = peso * valorPorQuilo;
+
+    // Exibir o valor total a ser pago
+    printf("O valor a ser pago é: R$ %.2f\n", valorTotal);
+
+    return 0;
+}
+
