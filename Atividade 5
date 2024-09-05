@@ -1,0 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    // Declaração das variáveis
+    float precoLitro, valorDisponivel, litrosComprados;
+
+    // Solicita ao usuário o preço do litro da gasolina
+    printf("Digite o preço do litro da gasolina: ");
+    scanf("%f", &precoLitro);
+
+    // Solicita ao usuário o valor disponível para abastecer
+    printf("Digite o valor disponível para abastecer: ");
+    scanf("%f", &valorDisponivel);
+
+    // Calcula a quantidade de litros que podem ser comprados
+    litrosComprados = valorDisponivel / precoLitro;
+
+    // Exibe o resultado na tela
+    printf("Você pode comprar %.2f litros de gasolina.\n", litrosComprados);
+
+    return 0;
+}
