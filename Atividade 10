@@ -1,0 +1,35 @@
+#include <stdio.h>
+
+int main() {
+    // Declaração das variáveis
+    int numCamisetas, numCalcas, numCintos;
+    float valorCamiseta = 25.0, valorCalca = 100.0, valorCinto = 40.0;
+    float totalCompra, valorDesconto, valorComDesconto;
+    const float descontoPercentual = 0.10; // 10% de desconto
+
+    // Solicita ao usuário o número de camisetas, calças e cintos comprados
+    printf("Digite o número de camisetas compradas: ");
+    scanf("%d", &numCamisetas);
+
+    printf("Digite o número de calças compradas: ");
+    scanf("%d", &numCalcas);
+
+    printf("Digite o número de cintos comprados: ");
+    scanf("%d", &numCintos);
+
+    // Calcula o valor total da compra
+    totalCompra = (numCamisetas * valorCamiseta) + (numCalcas * valorCalca) + (numCintos * valorCinto);
+
+    // Calcula o valor do desconto
+    valorDesconto = totalCompra * descontoPercentual;
+
+    // Calcula o valor da compra com desconto
+    valorComDesconto = totalCompra - valorDesconto;
+
+    // Exibe o resultado na tela
+    printf("Valor total da compra: R$ %.2f\n", totalCompra);
+    printf("Valor do desconto (10%%): R$ %.2f\n", valorDesconto);
+    printf("Valor da compra com desconto: R$ %.2f\n", valorComDesconto);
+
+    return 0;
+}
