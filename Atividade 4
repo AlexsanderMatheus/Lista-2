@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    // Declaração das variáveis para armazenar as notas
+    float grauA, grauB, mediaFinal;
+
+    // Solicita ao usuário que insira as notas
+    printf("Digite a nota do Grau A: ");
+    scanf("%f", &grauA);
+
+    printf("Digite a nota do Grau B: ");
+    scanf("%f", &grauB);
+
+    // Calcula a média final com os pesos fornecidos
+    mediaFinal = (grauA * (1.0 / 3.0)) + (grauB * (2.0 / 3.0));
+
+    // Exibe o resultado na tela
+    printf("A média final é: %.2f\n", mediaFinal);
+
+    return 0;
+}
