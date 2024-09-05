@@ -1,0 +1,19 @@
+#include <stdio.h>
+
+int main() {
+    // Declaração das variáveis
+    float celsius, fahrenheit;
+
+    // Solicita ao usuário que insira a temperatura em Celsius
+    printf("Digite a temperatura em Celsius: ");
+    scanf("%f", &celsius);
+
+    // Converte a temperatura de Celsius para Fahrenheit
+    fahrenheit = (celsius * 9.0 / 5.0) + 32.0;
+
+    // Exibe o resultado na tela
+    printf("A temperatura equivalente em Fahrenheit é: %.2f\n", fahrenheit);
+
+    return 0;
+}
+
