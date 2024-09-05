@@ -1,0 +1,20 @@
+#include <stdio.h>
+
+int main() {
+    // Declaração das variáveis
+    float valorCompra, valorComDesconto;
+    const float descontoPercentual = 0.15; // 15% de desconto
+
+    // Solicita ao usuário o valor da compra
+    printf("Digite o valor da compra: R$ ");
+    scanf("%f", &valorCompra);
+
+    // Calcula o valor do desconto
+    valorComDesconto = valorCompra * (1 - descontoPercentual);
+
+    // Exibe o resultado na tela
+    printf("O valor da compra com o desconto é: R$ %.2f\n", valorComDesconto);
+
+    return 0;
+}
+
