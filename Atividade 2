@@ -1,1 +1,22 @@
+#include <stdio.h>
+
+int main() {
+    float cotacao_dolar, qtde_dolares, total_reais;
+
+    // Solicita a cotação do dólar para real
+    printf("Digite a cotação do dólar para real: ");
+    scanf("%f", &cotacao_dolar);
+
+    // Solicita a quantidade de dólares desejada
+    printf("Digite a quantidade de dólares que deseja comprar: ");
+    scanf("%f", &qtde_dolares);
+
+    // Calcula o valor total em reais que ele precisará pagar
+    total_reais = cotacao_dolar * qtde_dolares;
+
+    // Exibe o resultado
+    printf("O valor total em reais a ser pago é: R$ %.2f\n", total_reais);
+
+    return 0;
+}
 
