@@ -1,0 +1,3 @@
+tempo_minutos = int(input("Digite o tempo em minutos: "))
+tempo_segundos = tempo_minutos * 60
+print("O tempo equivalente em segundos é:", tempo_segundos)
